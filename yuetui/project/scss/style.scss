@@ -1,0 +1,24 @@
+@charset "UTF-8";
+@import "variable";
+
+/* CSS属性初始化 */
+body, ul, dl, dt, dd {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-color: #fff;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+ol, ul {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+}
+
+
+@import "index";

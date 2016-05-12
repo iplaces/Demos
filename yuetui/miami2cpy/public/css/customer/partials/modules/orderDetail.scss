@@ -1,0 +1,232 @@
+.inner-wrap {
+  .profile-sidebar {
+    float: left;
+    margin-top: 20px;
+    width: 170px;
+  }
+  .profile-panel {
+    margin-left: 170px;
+    border: 1px solid #eee;
+    background-color: #fff;
+    min-height: 680px;
+    padding: 20px 18px;
+
+    .profile-paneltitle {
+      border-bottom: 2px solid #f4f4f4;
+      padding: 0 20px 11px;
+      font-size: 18px;
+      font-weight: 700;
+    }
+    .profile-panelcontent {
+      display: inline-block;
+      width: 100%;
+      .orderprogress-rstinfo {
+        position: relative;
+        padding: 18px 30px 1pc;
+        background-color: #f8f8f6;
+        border: 1px solid #eee;
+        @mixin rstgrid {
+          height: 44px;
+          vertical-align: top;
+          display: inline-block;
+        }
+        .orderprogress-rstimg {
+          @include rstgrid;
+          width: 44px;
+          margin-right: 9pt;
+        }
+        .orderprogress-rstgrid {
+          @include rstgrid;
+          line-height: 1;
+          .orderprogress-rstname {
+            padding-top: 2px;
+            font-size: 1pc;
+            color: #333;
+          }
+          .orderprogress-rstextra {
+            padding-top: 9pt;
+            font-size: 14px;
+            color: #999;
+          }
+        }
+
+      }
+      .orderprogress-cardtable {
+        display: table;
+        width: 100%;
+
+        .orderprogress-cardcell {
+          display: table-cell;
+          background-color: #f8f8f8;
+          border-left: 1px solid #eee;
+          vertical-align: top;
+          width: 438px;
+          .orderprogress-total {
+            padding-bottom: 2px;
+
+            .orderprogress-totalrow {
+              display: table;
+              width: 100%;
+              font-size: 14px;
+              color: #666;
+              padding-top: 24px;
+              line-height: 1;
+
+              &.orderprogress-totaltitle {
+                padding: 20px 0 1pc;
+                font-weight: 700;
+                border-bottom: 1px solid #eee;
+              }
+              .cell {
+                display: table-cell;
+                vertical-align: middle;
+
+                &.name {
+                  padding-left: 30px;
+                  width: 60%;
+                  text-align: left;
+                }
+
+                &.quantity {
+                  width: 10%;
+                  text-align: center;
+                }
+
+                &.price {
+                  padding-right: 30px;
+                  width: 30%;
+                  text-align: right;
+                }
+              }
+            }
+            .orderprogress-totalactual {
+              padding-top: 20px;
+              line-height: 1;
+              padding-right: 30px;
+              text-align: right;
+              font-size: 14px;
+              color: #333;
+              span {
+                font-size: 26px;
+                font-weight: 700;
+                color: #f74342;
+              }
+            }
+          }
+          .orderprogress-deliveryinfo {
+            padding: 0 30px;
+
+            .orderprogress-deliverytitle {
+              padding: 20px 0 4px;
+              font-size: 14px;
+              line-height: 1;
+              font-weight: 700;
+            }
+
+            .orderprogress-deliverygroup {
+              border-bottom: 1px dashed #eee;
+              padding: 20px 0 4px;
+
+              span {
+                display: table-cell;
+                vertical-align: top;
+                line-height: 18px;
+                word-break: break-all;
+              }
+
+              .orderprogress-deliverykey {
+                overflow: hidden;
+                width: 5em;
+                text-align: justify;
+                -moz-text-align-last: justify;
+                text-align-last: justify;
+              }
+            }
+          }
+        }
+      }
+      /*.unrated-rate {
+        margin-top: 38px;
+
+        .unrated-ratelist {
+          margin-bottom: 30px;
+
+          .unrated-ratelist-label {
+            display: inline-block;
+            margin-right: 27px;
+            width: 75pt;
+            text-align: right;
+            font-size: 1pc;
+            vertical-align: top;
+          }
+          .unrated-ratelist-content {
+            display: inline-block;
+            width: 62%;
+
+            .rate-star {
+              &.level1,&.level2{
+                .active {
+                  color: #a3a6af;
+                }
+              }
+              &.level3 {
+                .active {
+                  color: #f3b518;
+                }
+              }
+              &.level4 {
+                .active {
+                  color: #f18b1b;
+                }
+              }
+              &.level5 {
+                .active {
+                  color: #eb6643;
+                }
+              }
+              .comment-star {
+
+              }
+              a {
+                display: inline-block;
+                width: 22px;
+                height:22px;
+                background-image: url(/miami/assets/images/customer/iconfont-star.svg);
+              }
+              .rate-star-text {
+
+              }
+            }
+            .rate-content {
+              position: relative;
+              margin-top: 14px;
+              padding: 10px 9pt;
+              width: 340px;
+              background-color: #f7f7f7;
+              border: 1px solid #eee;
+              border-radius: 2px;
+              font-size: 9pt;
+              word-break: break-all;
+
+              textarea {
+                padding: 10px;
+                width: 100%;
+                height: 50px;
+                color: #999;
+                resize: none;
+                outline: 0;
+                vertical-align: top;
+              }
+            }
+          }
+          &.offset {
+            .btn-primary {
+              float: right;
+              margin-right: 100px;;
+            }
+          }
+        }
+      }*/
+    }
+  }
+}

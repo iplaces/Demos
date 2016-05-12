@@ -1,0 +1,70 @@
+@charset "UTF-8";
+/* CSS属性初始化 */
+body, ul, dl, dt, dd {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fff;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.search-box {
+  display: flex;
+  justify-content: center;
+}
+
+#search {
+  position: relative;
+  border: 1px solid #000;
+}
+#search label {
+  position: absolute;
+}
+#search input {
+  border: 0;
+}
+
+.navi-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.navi-choose {
+  width: 30%;
+  text-align: center;
+}
+
+.recommend-list, .hot-list, .navi-list {
+  border: 1px solid #000;
+  margin-bottom: 5px;
+}
+
+.show-list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.recommend-thing, .hot-thing {
+  width: 45%;
+  text-align: left;
+}
+.recommend-thing img, .hot-thing img {
+  width: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */

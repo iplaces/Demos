@@ -1,0 +1,30 @@
+.remark-list {
+  width: 80%;
+  .remark-li {
+    position: relative;
+    padding: 20px;
+    font-size: 14px;
+    .remark-header {
+      display: inline-block;
+      color: $food-des-color;
+      >span {
+        margin-right: 70px;
+      }
+    }
+    .rate {
+      display: inline-block;
+      position: absolute;
+      right: 2rem;
+    }
+    .remark-content {
+      padding: 1.5rem 0;
+    }
+    .remark-picture {
+      img {
+        width: 6rem;
+        height: 6rem;
+        margin-right: 20px ;
+      }
+    }
+  }
+}

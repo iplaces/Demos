@@ -1,0 +1,186 @@
+.checkout-content {
+  padding: 25px 20px 50px 30px;
+  float: right;
+  width: 65%;
+  border: 1px solid #e0e0e0;
+  //margin-top: 12px;
+  background-color: #fff;
+  .checkout-select {
+    margin-bottom: 40px;
+    h2 {
+      margin-bottom: 15px;
+      font-size: 16px;
+      font-weight: 700;
+      .checkout-addaddress {
+        float: right;
+        text-decoration: underline;
+        font-size: 14px;
+        font-weight: 400;
+      }
+    }
+    ul {
+      list-style: none;
+    }
+    .checkout-address {
+      display: block;
+      position: relative;
+      //margin-bottom: -1px;
+      padding: 15px 20px 15px 0;
+      width: 100%;
+      border: 1px solid #eee;
+      cursor: pointer;
+
+      .checkout-address-info {
+        display: table-cell;
+        padding-left: 16px;
+      }
+      .checkout-address-edit {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        display: none;
+      }
+
+      &.active {
+        border-color: #0089dc;
+        background: url('/miami/assets/images/customer/address-active.png') bottom right no-repeat;
+      }
+      &:hover {
+        .checkout-address-edit {
+          display: block;
+        }
+      }
+    }
+    .checkout-pay {
+      float: left;
+      padding: 11px 20px;
+      width: 49.2%;
+      height: 90px;
+      border: 1px solid #eee;
+      cursor: pointer;
+      .active {
+        border-color: #0089dc;
+      }
+    }
+    .checkout-info {
+      margin-bottom: 20px;
+      .check-info-label {
+        display: inline-block;
+        margin-right: 20px;
+        width: 5em;
+        text-align: right;
+      }
+      .checkout-input {
+        padding: 5px 10px;
+        width: 235px;
+        border: 1px solid #e0e0e0;
+        outline: 0;
+        color: #666;
+      }
+    }
+  }
+}
+.btn-stress {
+  background-color: #f74342;
+  color: #fff;
+}
+.btn-lg {
+  padding: 12px 30px;
+  font-size: 16px;
+}
+#dialog-overlay {
+  visibility: hidden;
+  position: fixed; /* 使用绝对定位或固定定位  */
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  z-index: 1000;
+  background-color: #333;
+  opacity: 0.5; /* 背景半透明 */
+}
+#commentdialog,#refunddialog,#addressdialog,#addressdialog0,#addressdialog1{
+  visibility: hidden;
+  position: fixed;
+  background: #fff;
+  padding:0;
+  z-index:1006;
+  .addressdialog-close {
+    display: inline-block;
+    position: absolute;
+    top: 1pc;
+    right: 1pc;
+    width: 9pt;
+    height: 9pt;
+    cursor: pointer;
+    color: #ccc;
+    font-size: 9pt;
+    line-height: 20px;
+    text-align: center;
+  }
+  .addressdialog-header {
+    font-size: 18px;
+    font-weight: 600;
+    padding: 15px;
+    color: #333;
+  }
+  .addressdialog-content {
+    padding: 15px 15px 30px;
+    overflow-x: hidden;
+    .addressform {
+      .addressformfield {
+        position: relative;
+        padding-bottom: 25px;
+        font-size: 14px;
+        >label {
+          float: left;
+          display: inline-block;
+          width: 65px;
+          height: 38px;
+          margin-right: 20px;
+          line-height: 38px;
+          text-align: right;
+          color: #666;
+        }
+        >input {
+          vertical-align: baseline;
+          border: 1px solid #dedede;
+          box-sizing: border-box;
+          width: 300px;
+          height: 42px;
+          line-height: 38px;
+          padding-left: 10px;
+          border-radius: 2px;
+        }
+        &.sexfield input + label {
+          display: inline-block;
+          margin-left: 5px;
+          width: 60px;
+          cursor: pointer;
+        }
+      }
+      .addressform-buttons {
+        button {
+          font-size: 14px;
+          box-sizing: border-box;
+          background: 0 0;
+          border: none;
+          padding: 0 20px;
+          color: #9f9f9f;
+          height: 42px;
+          border-radius: 2px;
+          cursor: pointer;
+          &:first-child {
+            margin-right: 10px;
+            border: 1px solid #0089dc;
+            background-color: #0089dc;
+            color: #fff;
+            width: 10pc;
+          }
+
+        }
+      }
+    }
+  }
+}

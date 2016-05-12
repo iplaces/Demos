@@ -1,0 +1,69 @@
+.modal-package {
+  display: none;
+  .modal{
+    position: fixed;
+    background: #fff;
+    padding:0;
+    z-index:1006;
+    width: 760px;
+    .modal-dialog{
+      .modal-content{
+        .modal-header{
+          font-size: 18px;
+          font-weight: 600;
+          padding: 15px;
+          color: #333;
+          .close {
+            display: inline-block;
+            position: absolute;
+            top: 1pc;
+            right: 1pc;
+            width: 9pt;
+            height: 9pt;
+            cursor: pointer;
+            color: #ccc;
+            font-size: 9pt;
+            line-height: 20px;
+            text-align: center;
+          }
+        }
+        .modal-body {
+          padding: 15px 15px 30px;
+          overflow-x: hidden;
+        }
+        .modal-footer {
+          button {
+            font-size: 14px;
+            box-sizing: border-box;
+            background: 0 0;
+            border: none;
+            padding: 0 20px;
+            color: #9f9f9f;
+            height: 42px;
+            border-radius: 2px;
+            cursor: pointer;
+            &:first-child {
+              margin-right: 10px;
+              border: 1px solid #0089dc;
+              background-color: #0089dc;
+              color: #fff;
+              width: 10pc;
+            }
+
+          }
+        }
+      }
+    }
+  }
+  .modal-background {
+    position: fixed; /* 使用绝对定位或固定定位  */
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    z-index: 1000;
+    background-color: #333;
+    opacity: 0.5; /* 背景半透明 */
+  }
+}

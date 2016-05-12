@@ -1,0 +1,42 @@
+@*
+ * This template is called from the `index` template. This template
+ * handles the rendering of the page header and body tags. It takes
+ * two arguments, a `String` for the title of the page and an `Html`
+ * object to insert into the body of the page.
+ *@
+@(title: String, conf: Map[String, String] = Map[String, String]() )(content: Html)
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        @* Here's where we render the page title `String`. *@
+        <title>@title</title>
+        <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+
+   @*<script src="http://libs.useso.com/js/jquery/2.1.1-rc2/jquery.min.js" type="text/javascript"></script>*@
+@*
+        <script src="http://libs.useso.com/js/bootstrap/3.2.0/js/bootstrap.min.js" type="text/javascript"></script>
+*@
+        @*<script src="//apps.bdimg.com/libs/moment/2.8.3/moment-with-locales.min.js"></script>*@
+
+@*
+        <link rel="stylesheet" media="screen" href="http://libs.useso.com/js/bootstrap/3.2.0/css/bootstrap.min.css">
+*@
+        <script>
+              var $CONF$ = {};
+              @conf.map { case (key, value) =>
+              $CONF$['@key'] = '@value';
+              }
+
+                      console.log($CONF$);
+
+        </script>
+        <link rel="icon" href="/miami/assets/images/favicon.ico" type="image/x-icon" />
+        <link rel="shortcut icon" href="/miami/assets/images/favicon.ico" type="image/x-icon" />
+    </head>
+    <body>
+        @* And here's where we render the `Html` object containing
+        * the page content. *@
+        @content
+    </body>
+</html>

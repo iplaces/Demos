@@ -1,0 +1,51 @@
+<configuration>
+
+  <conversionRule conversionWord="coloredLevel" converterClass="play.api.Logger$ColoredLevel"/>
+
+
+  <property name="logDir" value="./target/universal/stage/logs"/>
+
+  <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+    <encoder>
+      <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %-4relative %-5level %logger{42} [%thread] %X{akkaSource} - %msg%n</pattern>
+    </encoder>
+  </appender>
+
+
+  <appender name="FILE" class="ch.qos.logback.core.FileAppender">
+    <file>${logDir}/application.log</file>
+    <append>true</append>
+    <encoder>
+      <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %-4relative %-5level %logger{42} [%thread] %X{akkaSource} - %msg%n</pattern>
+    </encoder>
+  </appender>
+
+
+  <appender name="ACCESS" class="ch.qos.logback.core.FileAppender">
+    <file>${logDir}/access.log</file>
+    <append>true</append>
+    <encoder>
+      <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %-4relative %-5level %logger{42} [%thread] %X{akkaSource} - %msg%n</pattern>
+    </encoder>
+  </appender>
+
+
+  <!--
+    The logger name is typically the Java/Scala package name.
+    This configures the log level to log at for a package and its children packages.
+  -->
+  <logger name="com.neo.sk" level="DEBUG" additivity="true"/>
+  <logger name="common" level="DEBUG" additivity="true"/>
+  <logger name="controllers" level="DEBUG" additivity="true"/>
+  <logger name="modules" level="DEBUG" additivity="true"/>
+  <logger name="service" level="DEBUG" additivity="true"/>
+  <logger name="utils" level="DEBUG" additivity="true"/>
+  <logger name="actor" level="DEBUG" additivity="true"/>
+
+  <root level="INFO">
+    <appender-ref ref="CONSOLE"/>
+    <appender-ref ref="FILE"/>
+  </root>
+
+
+</configuration>

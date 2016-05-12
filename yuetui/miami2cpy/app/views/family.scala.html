@@ -1,0 +1,27 @@
+@(title: String, conf: Map[String, String] = Map[String, String]() )
+
+@main(title, conf) {
+
+  @*
+  * Get an `Html` object by calling the built-in Play welcome
+  * template and passing a `String` message.
+  *@
+  <div id="root">
+  </div>
+  <link rel="stylesheet" type='text/css' href="@routes.Assets.versioned("css/admin/timepicki.css")">
+  <link href="//cdn.bootcss.com/toastr.js/latest/css/toastr.min.css" rel="stylesheet">
+
+  <link href="//cdn.bootcss.com/bootstrap-fileinput/4.3.1/css/fileinput.min.css" rel="stylesheet">
+  <link href="//cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+  <script src="//cdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+  @*<script type='text/javascript' src="/miami/assets/javascript/admin/util/fileinput.min.js"></script>*@
+  <script src="//cdn.bootcss.com/bootstrap-fileinput/4.3.1/js/fileinput.min.js"></script>
+  <script src="//cdn.bootcss.com/toastr.js/latest/js/toastr.min.js"></script>
+  <script type='text/javascript' src='/miami/assets/javascript/admin/util/timepicki.js'></script>
+  <script src="/miami/assets/javascript/dist/admin.js"></script>
+
+
+
+}
+
