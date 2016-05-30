@@ -25,7 +25,7 @@ export default class NewsHeader extends React.Component {
     getNav() {
         var navLinks = [
             {
-                name: "new",
+                name: "news",
                 url: "newest"
             },
             {

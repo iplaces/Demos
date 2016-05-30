@@ -4,6 +4,7 @@ module.exports = {
     entry: path.resolve(__dirname, "app/app.js"),
     output: {
         path: path.resolve(__dirname, "build"),
+        publicPath: "http://localhost:8080/assets/",
         filename: "bundle.js"
     },
     module: {
